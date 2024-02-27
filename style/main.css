@@ -1,0 +1,66 @@
+
+:root {
+    /* ------ Color Primary ------ */
+    /* --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%); */
+
+    /* ------ Color Neutral ------ */
+    /* --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%); */
+
+    /* ------ Font ------ */
+    /* --font-regular: 400;
+    --font-semiBold: 600;
+    --font-bold: 700;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-young: 'Young Serif', serif;
+    --font-size: 16px; */
+}
+
+/* ------ Principal ------ */
+/* body {
+    background: var(--white);
+    font-size: var(--font-size);
+    font-weight: var(--font-regular);
+    color: var(--dark-charcoal);
+} */
+
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+} */
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 375px;
+} */
+
+/* -------- Attribution -------- */
+.attribution {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.attribution a {
+    color: var(--dark-raspberry);
+}
+
+/* ------ Responsivo ------ */
+/* @media only screen and (min-width: 740px) {} */
