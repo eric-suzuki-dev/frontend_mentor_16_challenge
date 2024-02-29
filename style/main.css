@@ -1,50 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
 :root {
     /* ------ Color Primary ------ */
-    /* --nutmeg: hsl(14, 45%, 36%);
-    --dark-raspberry: hsl(332, 51%, 32%); */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
 
     /* ------ Color Neutral ------ */
-    /* --white: hsl(0, 0%, 100%);
-    --rose-white: hsl(330, 100%, 98%);
-    --eggshell: hsl(30, 54%, 90%);
-    --light-grey: hsl(30, 18%, 87%);
-    --wenge-brown: hsl(30, 10%, 34%);
-    --dark-charcoal: hsl(24, 5%, 18%); */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    
+    /* -------- Attribution -------- */
+    --color-attribution: hsl(228, 45%, 44%);
 
     /* ------ Font ------ */
-    /* --font-regular: 400;
+    --font-medium: 500;
     --font-semiBold: 600;
-    --font-bold: 700;
-    --font-outfit: 'Outfit', sans-serif;
-    --font-young: 'Young Serif', serif;
-    --font-size: 16px; */
+    --font-barlow: "Barlow Semi Condensed", sans-serif;
+    --font-size: 13px;
 }
 
-/* ------ Principal ------ */
-/* body {
-    background: var(--white);
-    font-size: var(--font-size);
-    font-weight: var(--font-regular);
-    color: var(--dark-charcoal);
-} */
 
-/* main {
+/* ------ Principal ------ */
+body {
+    background: var(--light-grayish-blue);
+    font-family: var(--font-barlow);
+    font-size: var(--font-size);
+    font-weight: var(--font-medium);
+    color: var(--white);
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100vw;
-} */
+}
 
-/* .container {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 100%;
     width: 375px;
-} */
+}
+
+/* ------ card ------ */
+
+.card{
+    border-radius: 10px;
+    width: 330px;
+}
+
+.card .text{
+    padding: 0 38px;
+}
+
+.card .text p{
+  opacity: 70%;
+  padding-top: 20px;
+  line-height: 16px;
+}
+
+.card .text span{
+    text-align: left;
+    line-height: 25px;
+    font-size: 20px;
+   font-weight: var(--font-semiBold);
+}
+
+.card img{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    /* border: solid 2px var(--moderate-violet); */
+}
+
+.card-3, .card-5 {
+    color: var(--very-dark-grayish-blue);
+}
+
+/* ------ card presentation ------ */
+.card .presentation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0 20px 30px;
+}
+
+.card .name{
+    margin-left: 15px;
+ }
+ 
+.card .name sub{
+    font-size: 11px;
+    opacity: 50%;
+}
+
+/* ------ card 1-2-3-4-5 v2------ */ 
+.card-1 {
+    background-color: var(--moderate-violet);
+    height: 450px;
+    margin: 70px 22.5px 30px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) 0;
+}
+
+.card-2 {
+    background-color: var(--very-dark-grayish-blue);
+    height: 240px;
+    margin: 30px 22.5px;
+}
+
+.card-3 {
+    background-color: var(--white);
+    height: 230px;
+    margin: 30px 22.5px;
+}
+
+.card-4 {
+    background-color: var(--very-dark-blackish-blue);
+    height:380px;
+    margin: 30px 22.5px;
+}
+
+.card-5 {
+    background-color: var(--white);
+    height:450px;
+    margin: 0px 22.5px 70px;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5{
+    box-shadow: 20px 20px 50px rgba(153, 153, 153, 0.4);
+}
 
 /* -------- Attribution -------- */
 .attribution {
@@ -59,7 +151,7 @@
 }
 
 .attribution a {
-    color: var(--dark-raspberry);
+    color: var(--color-attribution);
 }
 
 /* ------ Responsivo ------ */
